@@ -7,7 +7,7 @@
 
 
 
- void  afficherLeBottin( std::set<Score> ListeDesJoueurs);
+ void  afficherJoueurs( std::set<Score> ListeDesJoueurs);
 
 int main()
 {
@@ -98,7 +98,7 @@ int main()
 
 //--3--Appel a la méthode d'affichage
 
-        afficherLeBottin(ListeDesJoueurs);
+        afficherJoueurs(ListeDesJoueurs);
       
     }
 
@@ -107,7 +107,7 @@ int main()
 
  //--3-1--Implémentation de la méthode d'affichage des objets de la classe <Score> 
 
-void  afficherLeBottin( std::set<Score> ListeDesJoueurs)
+void  afficherJoueurs( std::set<Score> ListeDesJoueurs)
 {
     std::set<Score>::iterator it;
     for (it = ListeDesJoueurs.begin(); it != ListeDesJoueurs.end(); ++it) 
